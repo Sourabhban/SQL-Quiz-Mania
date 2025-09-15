@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz Mania</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>
+                <i class="fas fa-database"></i>
+                MySQL MCQ Quiz
+            </h1>
+            <p>Test your SQL knowledge with 300+ questions</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="quiz-content" id="quizContent">
+            <div class="question-info">
+                <div class="question-counter" id="questionCounter">Question 1 of 150</div>
+                <div class="score-display" id="scoreDisplay">Score: 0</div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-text" id="questionText">Loading question...</div>
+                
+                <div class="options-container" id="optionsContainer">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+
+                <div class="explanation" id="explanation">
+                    <h4><i class="fas fa-lightbulb"></i> Explanation</h4>
+                    <p id="explanationText"></p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn" id="prevBtn" onclick="previousQuestion()">
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <button class="nav-btn" id="nextBtn" onclick="nextQuestion()">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="quiz-complete" id="quizComplete">
+            <h2><i class="fas fa-trophy"></i> Quiz Complete!</h2>
+            <div class="final-score" id="finalScore">0/150</div>
+            <div class="performance-message" id="performanceMessage">Great job!</div>
+            <button class="restart-btn" onclick="restartQuiz()">
+                <i class="fas fa-redo"></i> Restart Quiz
+            </button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
