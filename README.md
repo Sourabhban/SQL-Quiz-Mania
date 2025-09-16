@@ -52,3 +52,4 @@ database skills. It's also a good beginner-friendly project to practice
 **JavaScript DOM manipulation** and **responsive web design**.
 
 ------------------------------------------------------------------------
+link 🔗: https://sourabhban.github.io/SQL-Quiz-Mania/
